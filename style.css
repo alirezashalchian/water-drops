@@ -1,0 +1,52 @@
+body {
+  background-color: #dedede;
+}
+.water {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: transparent;
+  top: 90px;
+  left: 50px;
+  border-radius: 55% 45% 34% 66% / 63% 49% 51% 37%;
+  box-shadow: inset 10px 10px 10px #0000000c, 15px 25px 10px #00000019,
+    inset -10px -10px 15px #ffffffe5;
+  animation: effect 2s ease-in-out infinite alternate;
+}
+.water::before,
+.water::before {
+  position: absolute;
+  background-color: #fff;
+  content: "";
+}
+
+.water::before {
+  top: 40px;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 57% 43% 66% 34% / 48% 57% 43% 52%;
+}
+.water::before {
+  width: 15px;
+  height: 15px;
+  top: 15px;
+  left: 50px;
+  border-radius: 34% 66% 40% 60% / 48% 75% 25% 52%;
+}
+@keyframes effect {
+  0% {
+    border-radius: 55% 45% 34% 66% / 63% 49% 51% 37%;
+  }
+  50% {
+    border-radius: 70% 30% 54% 46% / 67% 51% 49% 33%;
+  }
+  100% {
+    border-radius: 44% 56% 33% 67% / 53% 40% 60% 47%;
+  }
+}
+.water:nth-child(2) {
+  top: 170px;
+  left: 200px;
+  transform: scale(0.5);
+}
